@@ -42,7 +42,7 @@ btn3.addEventListener("click", () => {
 
 })
 
-//this is the component for the third item
+//this is the component for the fourth item
 const btn4 = document.getElementById("btn4")
 
 
@@ -54,8 +54,8 @@ btn4.addEventListener("click", () => {
 
 })
 
+//this is the component for the fifth item
 const btn5 = document.getElementById("btn5")
-
 
 btn5.addEventListener("click", () => {
     let cel = document.getElementById("celcius").value
@@ -64,6 +64,7 @@ btn5.addEventListener("click", () => {
 
 })
 
+//this is the component for the sixth item
 const btn6 = document.getElementById("btn6")
 
 
@@ -74,6 +75,7 @@ btn6.addEventListener("click", () => {
 
 })
 
+//this is the component for the seventh item
 const btn7 = document.getElementById("btn7")
 
 btn7.addEventListener("click", () => {
@@ -81,7 +83,7 @@ btn7.addEventListener("click", () => {
     let female = document.getElementById("fem").value
     let malepercent = (male*1/(male*1+female*1))*100
     let femalepercent = (female*1/(male*1+female*1))*100
-    document.getElementById("percentage").innerHTML=`There are ${malepercent}% males and ${femalepercent}% females`
+    document.getElementById("percentage").innerHTML=`There are ${malepercent.toFixed(2)}% males and ${femalepercent.toFixed(2)}% females`
 })
 
     
