@@ -1,0 +1,79 @@
+/*style for the root*/
+:root{
+  background-image: url(https://wallpaperaccess.com/full/5652027.png);
+  color: white;
+  font-family:'Times New Roman', Times, serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*Style for the Header*/
+header h1{
+  text-align: center;
+  font-size: 3em;
+}
+
+
+
+
+
+/*style for the body*/
+.container{
+  align-content: center;
+  text-align: center;
+}
+.profile-pic{
+  height: 15em;
+  width: 15em;
+  border-radius: 15em;
+  margin-top:-12em;
+  border-color: darkblue;
+  border: 0.5em solid rgb(37, 37, 163);
+}
+.bg-photo{
+  height: 20em;
+  width: 100%;
+  object-fit:cover;
+}
+.images{
+  display: block;
+  position: sticky;
+}
+.hobby{
+  text-align: center;
+  list-style: none;
+}
+hr{
+  border: 0.15em dashed white
+}
+
+
+
+
+
+/*style for the footer*/
+footer{
+  bottom: 0;
+  position:fixed;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+footer ul{
+  list-style-type: none;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons a {
+  margin: 0 0.5rem;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+.social-icons a:hover {
+  color: var(--clr-primary-7);
+}
