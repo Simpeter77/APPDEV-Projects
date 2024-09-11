@@ -12,17 +12,17 @@ export default function Body(props) {
                 <h1>"{props.quoute}"</h1>
                 <h2>Birthday: {props.dob}</h2>
                 <h2>Age: {props.age}</h2>
-                <h3>Program: {props.program}</h3>
-                <h3>Status: {props.isEnrolled ? "Officially Enrolled" : "Dropped"}</h3>
+                <h2>Program: {props.program}</h2>
+                <h2>Status: {props.isEnrolled ? "Officially Enrolled" : "Dropped"}</h2>
             </div>
             <hr />
             <div class="hobby">
-            <h3>What I like to do:</h3>
-                <li><h3>Running</h3></li>
-                <li><h3>Table Tennis</h3></li>
-                <li><h3>Basketball</h3></li>
-                <li><h3>Gaming</h3></li>
-                <li><h3>Soccer</h3></li>
+            <h1>What I like to do:</h1>
+                <li><h2>Running</h2></li>
+                <li><h2>Table Tennis</h2></li>
+                <li><h2>Basketball</h2></li>
+                <li><h2>Gaming</h2></li>
+                <li><h2>Soccer</h2></li>
             <br />
             <br />
             <br />
