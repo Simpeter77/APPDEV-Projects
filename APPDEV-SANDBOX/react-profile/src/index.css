@@ -1,6 +1,9 @@
 /*style for the root*/
 :root{
-  background-image: url(https://wallpaperaccess.com/full/5652027.png);
+  background: linear-gradient(
+    rgb(0,0,0,0.7),rgb(0,0,0,0.7),
+  );
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8c41af36480857.571e5729a85e8.gif);
   color: white;
   font-family:'Times New Roman', Times, serif;
   background-size: cover;
