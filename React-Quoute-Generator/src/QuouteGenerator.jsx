@@ -12,7 +12,7 @@ const markus = ["The happiness of your life depends upon the quality of your tho
 "If it is not right do not do it; if it is not true do not say it.",
 "The soul becomes dyed with the color of its thoughts."]
 let i = 0 
-
+let y =""
 export default function QuouteGenerator(){
 const [quouteE,setQuouteE] = useState("Generate a quoute!")
 const [quouteM,setQuouteM] = useState("Generate a quoute!")
@@ -24,12 +24,16 @@ function getRandomNumber(){
     return randomnum
 }
 function getRandomQuouteEpicticus(){
-    return epicticus[getRandomNumber()]
+    let epi = epicticus[getRandomNumber()]
+    y = epi
+    return epi
 }
 
 function changeRandomQuouteEpicticus(){
     setQuouteE(getRandomQuouteEpicticus())
 }
+
+
 
 function incrementMarkus(){
     let q = ""
@@ -45,6 +49,8 @@ function changeRandomQuouteMarkus(){
 }
 return(
         <div class="container">
+            <h1>My quoute generator project</h1>
+            <hr />
             <h1>Epicticus</h1>
             <div className="epic">
             <h2>Quoute: {quouteE}</h2>  
