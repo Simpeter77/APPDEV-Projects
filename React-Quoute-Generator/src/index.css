@@ -16,16 +16,27 @@ button{
   color: white;
 }
 .epic{
-  height: 7em;
-  width: 100vw;
+  border-radius: 1em;
+  height: 8em;
+  width: 80%;
   background-color: teal;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .mark{
-  height: 7em;
-  width: 100vw;
+  font-size: 1em;
+  border-radius: 1em;
+  height: 8em;
+  width: 80%;
   background-color: teal;
   display: flex;
   justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+hr{
+  border: 0.1em black dashed;
 }

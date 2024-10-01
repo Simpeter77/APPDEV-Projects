@@ -56,12 +56,12 @@ export default function Counter(){
                 Counter: <br />{count}
             </p>
             &nbsp; 
-            <button className="button-container-decrement" onClick={decrementCount}>Decrement</button>
+            <button className="button-container-decrement" onClick={decrementCount}>Decrement 1</button>
             <button className="button-container-reset" onClick={resetCount}>Reset</button>
-            <button className="button-container-increment" onClick={incrementCount}>Increment</button>
+            <button className="button-container-increment" onClick={incrementCount}>Increment 1</button>
             <br/>
             <button className="button-container-decrement" onClick={decrementCountby5}>Decrement 5</button>
-            <button className="button-container-reset" onClick={randomizeCount}>Randomize</button>
+            <button className="button-container-reset" onClick={randomizeCount}>Random</button>
             <button className="button-container-increment" onClick={incrementCountby5}>Increment 5</button>
         </div>
     </>

@@ -1,8 +1,14 @@
-import QuouteGenerator from './QuouteGenerator'
+import Markus from './Markus'
+import Header from './Header'
+import Epicticus from './Epicticus'
+import Footer from './Footer'
 function App() {
   return (
     <>
-    <QuouteGenerator/>
+    <Header/>
+    <Epicticus/>
+    <Markus/>
+    <Footer/>
     </>
   )
 }
