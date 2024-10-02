@@ -1,5 +1,8 @@
 export default function Footer(){
     return(
-        <p>This is for the footer</p>
-    )
+        <footer>
+            <hr />
+            <p>&copy; {new Date().getFullYear()} My Website || Written by: James Peter Gonzaga</p>
+        </footer>
+    );
 }
