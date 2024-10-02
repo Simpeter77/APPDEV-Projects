@@ -40,3 +40,8 @@ button{
 hr{
   border: 0.1em black dashed;
 }
+button:hover{
+  background-color: teal;
+  color: white;
+  transition: 1s ease-in-out;
+}
