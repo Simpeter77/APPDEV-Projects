@@ -1,3 +1,9 @@
+body, html{
+  background-image: url(https://cdn.wallpapersafari.com/29/32/xBJPpY.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .list-category{
   font-weight: bold;
   font-size: 2.5em;
@@ -16,6 +22,7 @@
   border: 3px solid;
   text-align: center;
   background-color: gainsboro;
+  border-radius: 15px;
 }
 footer{
   text-align: center;
@@ -23,4 +30,32 @@ footer{
 .list li:hover{
   color: hsl(0,0%,55%);
   cursor: pointer;
+}
+header{
+  width: 100%;
+  background-color: teal;
+  display: inline-flex;
+  justify-content: space-around;
+}
+header ul{
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+  float: right;
+}
+header a{
+  text-decoration: none;
+  color:white;
+  font-size: 1.5em;
+}
+header li{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  padding: 10px;
+}
+footer{
+  color: white
 }

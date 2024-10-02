@@ -22,6 +22,8 @@ export default function FavoriteGames(){
                 }
             </ul>
             <input type="text" name="gameinput" id="gameInput" />
+           <br />
+           <br />
             <button type='button' onClick={handleAddGame}>Add Game</button>
         </div>
         </>
