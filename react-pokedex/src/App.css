@@ -1,0 +1,35 @@
+.pokemon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center; 
+  align-items: center; 
+  width: 70%;  
+  margin: 0 auto; 
+}
+.pokemon-card{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+  box-shadow: 0,2,5,black;
+  width: 16em;
+  background-color: rgba(255, 0, 0, 0.425);
+}
+.pokemon-card img{
+  height: 9em;
+}
+.pokemon-card:hover{
+  background-color: rgba(248, 242, 242, 0.507);
+  transition: 0.5s ease;
+}
+h1{
+  text-align: center;
+}
+#loading{
+  text-align: center;
+  font-size: 100px;
+}
+
+
