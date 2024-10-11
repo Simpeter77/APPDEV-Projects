@@ -44,7 +44,7 @@ export default function App() {
     }, []);
 
     if (loading) {
-        return <h1>Loading Pokémon...</h1>;
+        return <h1 id ="Loading">Loading Pokémon...</h1>;
     }
 
     return (
