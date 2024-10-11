@@ -1,9 +1,9 @@
-import Pokedex from './Pokedex'
+import All from './All'
 import './App.css'
 export default function App(){
   return(
     <> 
-    <Pokedex/>
+    <All/>
     </>
   )
 }

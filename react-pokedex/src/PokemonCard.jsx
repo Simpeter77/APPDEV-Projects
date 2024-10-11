@@ -12,5 +12,4 @@ const PokemonCard = ({ pokemon }) => {
     </div>
   );
 };
-
 export default PokemonCard;
