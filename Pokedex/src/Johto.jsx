@@ -1,7 +1,7 @@
 // Johto.js
 import React from 'react';
 
-export default function Johto({ pokemon, loading }) {
+export default function Johto({ pokemon, loading, searchTerm }) {
     const johtoPokemon = pokemon.slice(151, 251); // Johto Pokémon indices
 
     function paskal(string) {
@@ -9,20 +9,28 @@ export default function Johto({ pokemon, loading }) {
     }
 
     if (loading) {
-        return <div id="Loading">Loading Johto Pokémon...</div>; // Loading message for Johto
+        return <img src="https://i.pinimg.com/originals/b5/f2/8a/b5f28ae81ce69ccf4f2328c38e0d3e34.gif" id="Loading"/>
     }
-
+    const filteredPokemon = johtoPokemon.filter((poke) =>
+        poke.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
     return (
         <div>
             <h1 id="label">Johto Region</h1>
             <div id="container">
-                {johtoPokemon.map((poke, index) => (
-                    <div className="PokemonCard" key={index}>
-                        <h2>#{index + 152}</h2> {/* Johto Pokémon start from 152 */}
-                        <img src={poke.url} alt={poke.name} />
-                        <h1>{paskal(poke.name)}</h1> 
-                    </div>
-                ))}
+                {filteredPokemon.length > 0 ? (
+                    filteredPokemon.map((poke, index) => (
+                        <div className="PokemonCard">
+                            <h2>#{poke.id}</h2>
+                            <img src={poke.url} alt={poke.name} />
+                            <h1>{paskal(poke.name)}</h1> 
+                            <h3>Weight: {poke.weight/10}kg</h3>
+                            <h3>Height: {poke.height/10}m</h3>
+                        </div>
+                    ))
+                ) : (
+                    <p>No Pokémon found matching your search.</p>
+                )}
             </div>
         </div>
     );
