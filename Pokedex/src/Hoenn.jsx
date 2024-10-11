@@ -1,53 +1,16 @@
-import React, { useEffect, useState } from 'react';
-
-export default function Hoenn() {
-    const [pokemon, setPokemon] = useState([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        fetch('https://pokeapi.co/api/v2/pokemon?limit=386&offset=252')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok ' + response.statusText);
-                }
-                return response.json();
-            })
-            .then(data => {
-                // Create an array of fetch requests to get detailed data for each Pokémon
-                const fetches = data.results.map((pokemon) =>
-                    fetch(pokemon.url)
-                        .then(response => response.json())
-                        .then(details => ({
-                            name: pokemon.name,
-                            url: details.sprites.front_default, // Image URL
-                        }))
-                );
-
-                // Wait for all fetches to complete and update state
-                Promise.all(fetches).then(results => {
-                    setPokemon(results);
-                    setLoading(false);
-                });
-            })
-            .catch(error => {
-                console.error('There has been a problem with your fetch operation:', error);
-                setLoading(false);
-            });
-    }, []);
-    if (loading) {
-        return <h1>Loading...</h1>;
-    }
-
+import React from 'react';
+export default function Kanto({ pokemon }) {
+    const hoennPokemon = pokemon.slice(251, 386); 
     return (
-        <div className="Hoenn">
-            <h1>List of Johto Pokemon</h1>
+        <div>
+            <h1 id ="label">Hoenn Region</h1>
             <ul>
-                {pokemon.map((poke, index) => (
-                    <li key={index}>
-                        {poke.name}
-                        <br />
-                        <img src={poke.url} alt={poke.name} />
-                    </li>
+                {hoennPokemon.map((poke, index) => (
+                <div className="PokemonCard">
+                <h2>#{index+251}</h2>
+                <img src={poke.url} alt={poke.name} />
+                <h1>{poke.name}</h1> 
+            </div>
                 ))}
             </ul>
         </div>
