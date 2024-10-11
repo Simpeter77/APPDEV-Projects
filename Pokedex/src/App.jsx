@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import Kanto from './Kanto';
 import Johto from './Johto';
 import Hoenn from './Hoenn';
-import './App.css'
+import './App.css';
 
 export default function App() {
     const [pokemon, setPokemon] = useState([]);
@@ -36,24 +36,20 @@ export default function App() {
             } catch (error) {
                 console.error('There has been a problem with your fetch operation:', error);
             } finally {
-                setLoading(false);
+                setLoading(false); // Set loading to false after fetch completes
             }
         };
 
         fetchAllPokemon();
     }, []);
 
-    if (loading) {
-        return <h1 id ="Loading">Loading Pokémon...</h1>;
-    }
-
     return (
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/kanto" element={<Kanto pokemon={pokemon} />} />
-                <Route path="/johto" element={<Johto pokemon={pokemon} />} />
-                <Route path="/hoenn" element={<Hoenn pokemon={pokemon} />} />
+                <Route path="/kanto" element={<Kanto pokemon={pokemon} loading={loading} />} />
+                <Route path="/johto" element={<Johto pokemon={pokemon} loading={loading} />} />
+                <Route path="/hoenn" element={<Hoenn pokemon={pokemon} loading={loading} />} />
             </Routes>
         </Router>
     );
