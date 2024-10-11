@@ -4,12 +4,14 @@ import Navbar from './Navbar';
 import Kanto from './Kanto';
 import Johto from './Johto';
 import Hoenn from './Hoenn';
+import Home from './Home';
+import Sinnoh from './Sinnoh';
+import Unova from './Unova';
 import './App.css';
 
 export default function App() {
     const [pokemon, setPokemon] = useState([]);
     const [loading, setLoading] = useState(true);
-
     useEffect(() => {
         const fetchAllPokemon = async () => {
             try {
@@ -47,9 +49,12 @@ export default function App() {
         <Router>
             <Navbar />
             <Routes>
+                <Route path="/" element={<Home pokemon ={pokemon} loading ={loading}/>} />
                 <Route path="/kanto" element={<Kanto pokemon={pokemon} loading={loading} />} />
                 <Route path="/johto" element={<Johto pokemon={pokemon} loading={loading} />} />
                 <Route path="/hoenn" element={<Hoenn pokemon={pokemon} loading={loading} />} />
+                <Route path="/sinnoh" element={<Sinnoh pokemon={pokemon} loading={loading} />} />
+                <Route path="/unova" element={<Unova pokemon={pokemon} loading={loading} />} />
             </Routes>
         </Router>
     );

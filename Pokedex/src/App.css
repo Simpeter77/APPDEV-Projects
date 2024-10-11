@@ -11,7 +11,7 @@
   justify-content: center;
   color: white;
   border-radius: 1em;
-  padding: 1em;
+  padding: 2em;
   margin: 2em;
 }
 .PokemonCard img{
@@ -20,6 +20,9 @@
   justify-content: center;
   align-items: center;
   margin:0 auto;
+}
+.PokemonCard h2{
+  font-size: 2em;
 }
 #label{
   font-size: 100px;

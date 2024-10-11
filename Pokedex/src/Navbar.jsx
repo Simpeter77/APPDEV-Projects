@@ -6,9 +6,13 @@ export default function Navbar() {
         <nav>
             <h1>Pokedex</h1>
             <ul>
-                <li><Link to="/Kanto">Kanto</Link></li>
-                <li><Link to="/Johto">Johto</Link></li>
-                <li><Link to="/Hoenn">Hoenn</Link></li>
+                <li id="navigation"><Link to="/">Home</Link></li>
+                <li id="navigation"><Link to="/Kanto">Kanto</Link></li>
+                <li id="navigation"><Link to="/Johto">Johto</Link></li>
+                <li id="navigation"><Link to="/Hoenn">Hoenn</Link></li>
+                <li id="navigation"><Link to="/Sinnoh">Sinnoh</Link></li>
+                <li id="navigation"><Link to="/Unova">Unova</Link></li>
+
             </ul>
         </nav>
     );
