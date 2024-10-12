@@ -1,7 +1,8 @@
+// Hoenn.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-export default function Kanto({ pokemon, loading, searchTerm }) {
-    const pokemonRange = pokemon.slice(0,151); 
+export default function Hisui({ pokemon, loading, searchTerm }) {
+    const pokemonRange = pokemon.slice(898,905); 
 
     function paskal(string) {
         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
@@ -14,7 +15,7 @@ export default function Kanto({ pokemon, loading, searchTerm }) {
     );
     return (
         <div>
-            <h1 id="label">Kanto Region</h1>
+            <h1 id="label">Hisui Region</h1>
             <div id="container">
                 {filteredPokemon.length > 0 ? (
                     filteredPokemon.map((poke) => (

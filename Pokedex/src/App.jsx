@@ -7,6 +7,12 @@ import Hoenn from './Hoenn';
 import Home from './Home';
 import Sinnoh from './Sinnoh';
 import Unova from './Unova';
+import Details from './Details';
+import Kalos from './Kalos';
+import Alola from './Alola';
+import Galar from './Galar';
+import Paldea from './Paldea';
+import Hisui from './Hisui';
 import './App.css';
 
 export default function App() {
@@ -18,7 +24,7 @@ export default function App() {
         const fetchAllPokemon = async () => {
             setLoading(true); // Set loading to true before fetching
             try {
-                const maxPokemon = 1000;
+                const maxPokemon = 1025;
                 const fetches = [];
 
                 for (let i = 1; i <= maxPokemon; i++) {
@@ -37,7 +43,8 @@ export default function App() {
                     url: data.sprites.front_default,
                     id: data.id,
                     weight: data.weight,
-                    height: data.height, }));
+                    height: data.height,
+                    types: data.types.map((t) => t.type.name), }));
                 setPokemon(pokemons);
             } catch (error) {
                 console.error('There has been a problem with your fetch operation:', error);
@@ -59,6 +66,12 @@ export default function App() {
                 <Route path="/hoenn" element={<Hoenn pokemon={pokemon} loading={loading} searchTerm={searchTerm} />} />
                 <Route path="/sinnoh" element={<Sinnoh pokemon={pokemon} loading={loading} searchTerm={searchTerm} />} />
                 <Route path="/unova" element={<Unova pokemon={pokemon} loading={loading} searchTerm={searchTerm} />} />
+                <Route path="/details/:id" element={<Details />} />
+                <Route path="/kalos" element={<Kalos pokemon={pokemon} loading={loading} searchTerm={searchTerm} />} />
+                <Route path="/alola" element={<Alola pokemon={pokemon} loading={loading} searchTerm={searchTerm} />} />
+                <Route path="/galar" element={<Galar pokemon={pokemon} loading={loading} searchTerm={searchTerm} />} />
+                <Route path="/hisui" element={<Hisui pokemon={pokemon} loading={loading} searchTerm={searchTerm} />} />
+                <Route path="/paldea" element={<Paldea pokemon={pokemon} loading={loading} searchTerm={searchTerm} />} />
             </Routes>
         </Router>
     );

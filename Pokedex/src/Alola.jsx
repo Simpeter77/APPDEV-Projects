@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-export default function Kanto({ pokemon, loading, searchTerm }) {
-    const pokemonRange = pokemon.slice(0,151); 
+export default function Alola({ pokemon, loading, searchTerm }) {
+    const pokemonRange = pokemon.slice(721,809); 
 
     function paskal(string) {
         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
@@ -14,7 +14,7 @@ export default function Kanto({ pokemon, loading, searchTerm }) {
     );
     return (
         <div>
-            <h1 id="label">Kanto Region</h1>
+            <h1 id="label">Alola Region</h1>
             <div id="container">
                 {filteredPokemon.length > 0 ? (
                     filteredPokemon.map((poke) => (

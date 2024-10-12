@@ -1,30 +1,38 @@
-// Hoenn.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Hoenn({ pokemon, loading, searchTerm }) {
+export default function Home({ pokemon, loading, searchTerm }) {
     function paskal(string) {
         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
     }
+
     if (loading) {
-        return <div id="Loading">Loading All Pokémon...</div>; // Loading message for Hoenn
+        return <img src="https://i.pinimg.com/originals/b5/f2/8a/b5f28ae81ce69ccf4f2328c38e0d3e34.gif" id="Loading"/> // Loading message for Kanto
     }
+
     // Filter Pokémon based on the search term
     const filteredPokemon = pokemon.filter((poke) =>
         poke.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
     return (
         <div>
-            <h1 id="label">All Pokemons</h1>
+            <h1 id="label">All Pokémon</h1>
             <div id="container">
                 {filteredPokemon.length > 0 ? (
-                    filteredPokemon.map((poke, index) => (
-                        <div className="PokemonCard">
-                            <h2>#{poke.id}</h2>
-                            <img src={poke.url} alt={poke.name} />
-                            <h1>{paskal(poke.name)}</h1> 
-                            <h3>Weight: {poke.weight/10}kg</h3>
-                            <h3>Height: {poke.height/10}m</h3>
-                        </div>
+                    filteredPokemon.map((poke) => (
+                        <Link 
+                            to={`/details/${poke.id}`} 
+                            key={poke.id} 
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <div className="PokemonCard" style={{ cursor: 'pointer' }}>
+                                <h2>#{poke.id}</h2>
+                                <img src={poke.url} alt={poke.name} />
+                                <h1>{paskal(poke.name)}</h1>
+                            </div>
+                             
+                        </Link>
                     ))
                 ) : (
                     <p>No Pokémon found matching your search.</p>

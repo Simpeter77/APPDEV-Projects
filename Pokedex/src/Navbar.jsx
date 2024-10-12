@@ -11,7 +11,7 @@ export default function Navbar({ searchTerm, setSearchTerm }) {
                 placeholder="Search Pokémon..." 
                 value={searchTerm} 
                 onChange={(e) => setSearchTerm(e.target.value)}
-                aria-label="Search Pokémon" // Accessibility improvement
+                aria-label="Search Pokémon"
                 style={{
                     padding: '5px',
                     height: '50%',
@@ -35,6 +35,11 @@ export default function Navbar({ searchTerm, setSearchTerm }) {
                 <li><NavLink to="/hoenn">Hoenn</NavLink></li>
                 <li><NavLink to="/sinnoh">Sinnoh</NavLink></li>
                 <li><NavLink to="/unova">Unova</NavLink></li>
+                <li><NavLink to="/kalos">Kalos</NavLink></li>
+                <li><NavLink to="/alola">Alola</NavLink></li>
+                <li><NavLink to="/galar">Galar</NavLink></li>
+                <li><NavLink to="/hisui">Hisui</NavLink></li>
+                <li><NavLink to="/paldea">Paldea</NavLink></li>
             </ul>
         </nav>
     );
