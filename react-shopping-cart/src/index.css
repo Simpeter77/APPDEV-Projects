@@ -1,68 +1,77 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.Login{
+  text-align: center;
+  background-color: gray;
+  width: 50%;
+  margin: 0 auto;
+  align-self:center;
+  margin-top: 12em;
+  padding: 3em;
+  border-radius: 3em;
 }
-a:hover {
-  color: #535bf2;
+.Login h1{
+  padding: 2em;
 }
-
-body {
-  margin: 0;
+.Login input{
+  margin:2em;
+  margin-left: 0em;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+.Login button{
+  padding: 1em;
+  border-radius: 0.6em;
+}
+.Admin{
+  text-align: center;
+  background-color: rgba(105, 105, 105, 0.658);
+  color: white;
+  width: 60em;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  margin: 5em;
+  border-radius: 3em;
+  align-self: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3em;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+hr{
+  width: 100%;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+.Admin button{
+  padding: 1em;
+  background-color: rgb(43, 41, 41);
+  color: white;
+  border-radius: 1em;
   font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
+.Admin h2{
+  font-size: 2em;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.Admin h4{
+  font-size: 1em;
+}
+.Admin input{
+  color: grey;
+  padding: 1em;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.Shop{
+  text-align: center;
+  list-style: none;
+  background-color: grey;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 5em;
+  border-radius: 2em;
+}
+.Shop ul{
+  list-style: none;
+}
+.Shop button{
+  padding: 0.5em;
+  border-radius: 0.5em;
 }

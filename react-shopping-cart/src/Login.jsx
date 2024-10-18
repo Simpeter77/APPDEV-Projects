@@ -44,7 +44,7 @@ export default function Login(){
 
     function renderLogin(){
         return(
-            <div className="">
+            <div className="Login">
                 <h1>Login: </h1>
                 Username: <input type="text" placeholder="Enter your UserName" id="username" onChange={getUserName} />
                 <br />

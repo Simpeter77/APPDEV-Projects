@@ -47,7 +47,7 @@ export default function AdminPanel(props){
     }
     else{
         return(
-        <div>
+        <div className="Admin">
             <h1>This is the admin panel:</h1>
             <p>This are the admins accounts</p>
             {renderAccounts()}
