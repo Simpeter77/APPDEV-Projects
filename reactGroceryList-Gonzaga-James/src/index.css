@@ -125,14 +125,14 @@ h4 {
 
 .items-grid {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: space-around;
   gap: 2em;
 }
 
 .item-container {
-  height:18em;
-  width: 18em;
+  height:12em;
+  width: 10em;
   padding: 15px;
   background-color: #dbdbdb;
   border-radius: 6px;
@@ -141,12 +141,14 @@ h4 {
 
 }
 
-
 .item-container img {
   width: 100%;
-  height: auto;
+  height: 5em;
   border-radius: 6px;
   margin-bottom: 15px;
+}
+.item-container button{
+  margin-top: -1em;
 }
 
 .item-container li {
@@ -213,7 +215,7 @@ button[type="button"]:hover {
   background-color: #1976d2;
 }
 
-/* Error Message */
+
 p[style="color: red"] {
   color: red;
   font-size: 1rem;
