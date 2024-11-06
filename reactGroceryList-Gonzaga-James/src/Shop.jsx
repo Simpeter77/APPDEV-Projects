@@ -11,20 +11,19 @@ export default function Shop(props) {
 
   const addToCart = (item) => {
     setCart((prevCart) => {
-      const updatedCart = [...prevCart];
-      const existingItem = updatedCart.find((cartItem) => cartItem.id === item.id);
-
-      if (existingItem) {
-        existingItem.quantity += 1;  
-      } else {
-        updatedCart.push({ ...item, quantity: 1 });  
+      const updatedCart = prevCart.map((cartItem) => 
+        cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
+      );
+  
+     
+      if (!updatedCart.some((cartItem) => cartItem.id === item.id)) {
+        updatedCart.push({ ...item, quantity: 1 });
       }
-
+  
       updateTotal(updatedCart);
       return updatedCart;
     });
   };
-
   const updateTotal = (updatedCart) => {
     const newTotal = updatedCart.reduce((sum, item) => sum + item.price * item.quantity, 0);
     setTotal(newTotal);
