@@ -12,7 +12,7 @@ h1, h4 {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #077ece;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -22,7 +22,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #077ece;
 }
 
 
@@ -38,12 +38,13 @@ button:hover {
 }
 
 input[type="text"], input[type="password"], textarea {
-    width: 60vw; 
-    max-width: 400px; 
+    max-width: 40vw; 
+    min-width: 40vw;
+    max-height: 50%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 1em;
     box-sizing: border-box;
     font-size: 16px;
     display: block;
@@ -51,6 +52,11 @@ input[type="text"], input[type="password"], textarea {
     margin-right: auto;
 }
 
+select{
+    width: 15em;
+    height: 3em;
+    border-radius: 1em;
+}
 h1 {
     font-size: 24px;
 }
@@ -60,20 +66,6 @@ h4 {
     margin-bottom: 20px;
 }
 
-.reviews-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-textarea {
-    min-height: 100px;
-}
 
 textarea, input[type="text"] {
     font-size: 16px;
@@ -85,10 +77,9 @@ ol {
 }
 
 li {
-    font-size: 16px;
     margin-bottom: 10px;
-    background-color: grey;
-    font-size: 1.5em;
+    background-color: rgb(194, 193, 193);
+    font-size: 1.2em;
     width: max-content;
     margin: 0 auto;
     padding: 1em;
@@ -104,5 +95,26 @@ h2 {
     color: #666;
 }
 :root{
-    text-align: center;
+    text-align: left;
+    margin: 0 30%;
+}
+button{
+    display: flex;
+    margin: 0 auto;
+    margin-top: -3.5em;
+}
+.login{
+    background-color: #ccc;
+    padding: 2em;
+    border-radius: 1em;
+    width: max-content;
+    margin-top: 15em;
+}
+.reviews{
+    background-color: #b8b8b8;
+    padding: 3em;
+    width: max-content;
+    margin-top: 5em;
+    border-radius: 1em;
+    justify-self: center;
 }

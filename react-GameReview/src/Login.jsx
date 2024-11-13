@@ -25,7 +25,7 @@ export default function Login(props) {
     }
     const renderLoginForm = () => {
         return(
-            <div>
+            <div className='login'>
             <h1>Welcome to Wormmmy's Reviews!</h1>
             <h4>Login to Continue:</h4>
             Username: 
@@ -35,7 +35,7 @@ export default function Login(props) {
             Password:
             <input type="password" name="password" id="password" onChange={handlePasswordChange} value={password}/>
             <br />
-            <br />
+            <br /><br /><br /><br />
             <button type="button" onClick={handleLogin}>Login</button>
             </div>
         );
