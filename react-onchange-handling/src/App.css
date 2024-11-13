@@ -1,0 +1,56 @@
+body{
+  background-color: grey;
+}
+header ul{
+  list-style: none;
+}
+header a{
+  text-decoration: none;
+  color: black;
+}
+header{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+header ul{
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 100%;
+  width: 30%;
+  font-size: 1.5em;
+}
+#root{
+  text-align: left;
+}
+.Form{
+  display: flex;
+  width: 25vw;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+  background-color: white;
+  padding: 3em;
+  border-radius: 2em;
+}
+
+footer{
+  text-align: center;
+}
+.Form-contents{
+  margin: 0 auto;
+}
+button{
+  font-size: 1.2em;
+  margin: 0 auto;
+  border-radius: 1em;
+  background-color:grey;
+  color: white
+}
