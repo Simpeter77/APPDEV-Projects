@@ -18,6 +18,7 @@ export default function Troubleshoot(props) {
 
   return (
     <>
+    <img src={props.kbx.img} alt="KBX keyboard"/>
       <h1>Troubleshooting</h1>
       {renderTroubleshoot()}
     </>

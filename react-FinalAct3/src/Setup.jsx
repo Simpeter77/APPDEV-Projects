@@ -17,17 +17,9 @@ export default function SetupInstructions(props) {
 
   return (
     <div className="setup-instructions">
+        <img src={props.kbx.img} alt="KBX keyboard"/>
       <h1>Setup Instructions</h1>
       {renderInstructions()}
     </div>
   );
 }
-
-SetupInstructions.propTypes = {
-  instructions: PropTypes.arrayOf(
-    PropTypes.shape({
-      section: PropTypes.string.isRequired,
-      steps: PropTypes.arrayOf(PropTypes.string).isRequired
-    })
-  ).isRequired
-};

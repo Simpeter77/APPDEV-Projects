@@ -20,6 +20,7 @@ export default function Maintenance(props) {
 
   return (
     <>
+    <img src={props.kbx.img} alt="KBX keyboard"/>
       <h1>Maintenance and Care</h1>
       {renderMaintenance()}
     </>

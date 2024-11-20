@@ -3,6 +3,7 @@ import React from 'react';
 function Specification(props) {
   return (
     <div className='specification'>
+    <img src={props.kbx.img} alt="KBX keyboard"/>
     <h1>Specifications</h1>
     <br />
       <ul>

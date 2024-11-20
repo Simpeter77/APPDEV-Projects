@@ -176,13 +176,13 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Overview kbx={kbx} />} />
         <Route path="/specification" element={<Specification kbx={kbx} />} />
-        <Route path="/inthebox" element={<Inthebox items={inTheBoxItems} />} />
-        <Route path="/keyfeatures" element={<Keyfeatures features={keyFeatures} />} />
-        <Route path="/setup" element={<SetupInstructions instructions={setupInstructions} />} />
-        <Route path="/howtouse" element={<Howtouse how={howToUseInstructions} />} />
-        <Route path="/troubleshoot" element={<Troubleshoot troubleshoot={troubleshootInstructions} />} />
-        <Route path="/maintenance" element={<Maintenance maintenance={maintenanceInstructions} />} />
-        <Route path="/warrantyandsupport" element={<WarrantyAndSupport warranty={warrantyAndSupport} />} />
+        <Route path="/inthebox" element={<Inthebox items={inTheBoxItems} kbx={kbx} />} />
+        <Route path="/keyfeatures" element={<Keyfeatures features={keyFeatures} kbx={kbx}/>} />
+        <Route path="/setup" element={<SetupInstructions instructions={setupInstructions} kbx={kbx}/>} />
+        <Route path="/howtouse" element={<Howtouse how={howToUseInstructions} kbx={kbx}/>} />
+        <Route path="/troubleshoot" element={<Troubleshoot troubleshoot={troubleshootInstructions} kbx={kbx}/>} />
+        <Route path="/maintenance" element={<Maintenance maintenance={maintenanceInstructions} kbx={kbx} />} />
+        <Route path="/warrantyandsupport" element={<WarrantyAndSupport warranty={warrantyAndSupport} kbx={kbx}/>} />
       </Routes>
     </Router>
   );

@@ -16,9 +16,10 @@ export default function Howtouse(props){
         )
     }
     return(
-        <>
+        <div className="how-to-use">
+        <img src={props.kbx.img} alt="KBX keyboard"/>
         <h1>How to Use</h1>
         {renderHow()}   
-        </>
+        </div >
     )
 }
