@@ -21,8 +21,7 @@ export default function Game(){
             <p>{game.description}</p>
             <h3>Publisher: {game.publisher}</h3>
             <h3>Developer: {game.developer}</h3>
-            <h2>Reviews:</h2>
-            <p>{game.description}</p><br />
+            <h2>Reviews:</h2><br />
             {renderReview()}
         </div>
     )
