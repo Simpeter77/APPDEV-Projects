@@ -5,6 +5,7 @@ export default function Home(){
         <div className="Home">
         <h1>Welcome to my Home Page</h1>
         <h1>Get Ready to Game!</h1>
+        <br />
         </div>
         <hr />
         <Games/>

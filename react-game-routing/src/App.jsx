@@ -1,5 +1,4 @@
 import Home from './components/Home'
-import About from './components/About'
 import Games from './components/Games'
 import NotFound from './components/NotFound'
 import Navigation from './Navigation'
@@ -11,7 +10,6 @@ function App() {
     <Navigation/>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/about" element={<About/>}/>
         <Route path='/games'>
             <Route index element={<Games/>}/>
             <Route path=':gameId' element={<Game/>}/>
