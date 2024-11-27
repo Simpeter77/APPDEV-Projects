@@ -31,6 +31,7 @@ ul li{
     margin: 0 auto;
     flex-direction: column;
     list-style: none;
+    padding: 2em;
 }
 a{
     text-decoration: none;
@@ -50,5 +51,16 @@ a{
 }
 .game-details{
     list-style: none;
-    text-align: left
+    text-align: left;
+    width: 50%;
+    margin:0 auto;
+}
+.game-details h1{
+    text-align: center;
+}
+:root{
+    padding: 2em;
+}
+.not-found{
+    text-align: center;
 }

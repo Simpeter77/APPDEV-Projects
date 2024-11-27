@@ -74,7 +74,7 @@ export default function Games(){
             <div className="games">
             {games.map((game) => (
                 <div className="">
-                    <Link to ={'/games/${game.id}'} state={{game}}>
+                    <Link to ={`/games/${game.id}`} state={{game}}>
                     <li key={game.id}>
                         <hr />
                     <img src={game.img} alt={game.name} id="images"/><br />
@@ -84,8 +84,8 @@ export default function Games(){
                     <br />
                     <hr />
                     </li>
+                    <br></br>
                     </Link>
-                    
                 </div>
                 
     ))}

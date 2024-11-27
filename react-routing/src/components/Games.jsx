@@ -23,7 +23,7 @@ export default function Games(){
             {games.map((game) => (
                 <div className="">
                     <li key={game.id}>
-                    <Link to ={'/games/${game.id}'} state={{game}}>
+                    <Link to ={`/games/${game.id}`} state={{game}}>
                         {game.name.toUpperCase()} 
                     </Link>
                     - {game.description}

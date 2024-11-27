@@ -7,8 +7,10 @@ export default function Game(){
             <>
             {game.reviews.map((rev) => (
                 <div className="review-container">
-                    <li key={rev.id}><strong>{rev.username}</strong> - Rating: {rev.rating}</li>
-                    <p>{rev.review}</p>
+                    <hr />
+                    <li key={rev.id}><strong>{rev.username}</strong> - Rating: {rev.rating} / 5</li>
+                    <p>{rev.review}</p> 
+                    <hr />
                 </div>
             ))}
             </>
@@ -16,12 +18,13 @@ export default function Game(){
     }
     return(
         <div className="game-details">
-            <img src={game.img} alt={game.name} />
+            <img src={game.img} alt={game.name} /><br />
             <h1>{game.name}</h1>
-            <p>{game.description}</p>
+            <p>{game.description}</p><br />
             <h3>Publisher: {game.publisher}</h3>
-            <h3>Developer: {game.developer}</h3>
-            <h2>Reviews:</h2><br />
+            <h3>Developer: {game.developer}</h3><br />
+            <hr />
+            <h2>Reviews:</h2>
             {renderReview()}
         </div>
     )

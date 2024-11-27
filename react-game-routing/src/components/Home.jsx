@@ -4,9 +4,9 @@ export default function Home(){
         <>
         <div className="Home">
         <h1>Welcome to my Home Page</h1>
-        <p>This is my current home page</p>
+        <h1>Get Ready to Game!</h1>
         </div>
-        <hr />``
+        <hr />
         <Games/>
         </>
         
