@@ -1,7 +1,28 @@
-export default function About(){
-    return(
+import React from "react";
+
+export default function About(props) {
+    function renderVMO() {
+        return (
+           <>
+            {props.item.map((vmo) => (
+                <>
+                <li key = {vmo.id}>{vmo.name}</li>
+                <ol>
+                {vmo.description.map((desc,index) => (
+                            <li key={index}>{desc}</li>
+                    ))}
+                </ol>  
+                </>
+            ))}
+           </>
+        );
+    }
+
+    return (
         <>
-            <h1>This is for the about page</h1>
+            <div className="vmo-container">
+                {renderVMO()}
+            </div>
         </>
-    )
+    );
 }
