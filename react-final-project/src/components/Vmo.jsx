@@ -9,7 +9,7 @@ export default function Vmo(props){
                         <ul>
                             {vmo.description.map((desc, index) => (
                                 <li key={index}>
-                                    {desc}
+                                    - {desc}
                                 </li>
                             ))}
                         </ul>

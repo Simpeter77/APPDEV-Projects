@@ -1,3 +1,4 @@
+import About from "./About"
 export default function Home(){
     const hero =[
         {id:1,
@@ -11,7 +12,7 @@ export default function Home(){
                 {hero.map((item) =>(
                     <div className="hero-details">
                         <img src={item.img}/>
-                        <h1>{item.tagline}</h1>
+                        <h1>"{item.tagline}"</h1>
                     </div>
                 ))}
             </div>
@@ -20,7 +21,11 @@ export default function Home(){
     return(
         <div className="home-container">
             <h1>Welcome to Keystaxx</h1>
+            <hr className="home-hr"/>
             {renderHero()}
+            <h1>Our Products</h1>
+            <hr className="home-hr"/>
+            <About/>
         </div>
     )
 }

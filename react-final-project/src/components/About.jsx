@@ -81,7 +81,8 @@ export default function About(props) {
                 {story.map((item) => (
                     <div className="story-details">
                         <h1>{item.title}</h1>
-                        <p className="story-details-quoute">{item.quoute}</p>
+                        <hr />
+                        <p className="story-details-quoute">"{item.quoute}"</p>
                         <p className="story-details-text">{item.text}</p>
                     </div>
                 ))}
@@ -116,10 +117,12 @@ export default function About(props) {
         <>
         <div className="about-container">
             <h1>About KeyStaxx</h1>
+            <hr />
             <h2>We Are What We Stand For</h2>
             <Vmo item={vmo}/>
             {renderStory()}
             <h1>Meet Our Team</h1>
+            <hr />
             {renderTeam()}
         </div>
         </>
