@@ -1,0 +1,58 @@
+.vmo-header{
+    font-size: 3em;
+    list-style: none;
+}
+.vmo-container ul li{
+    font-size: 1.5em;
+    text-align: justify;
+}
+.about-container h1{
+    font-size: 4em;
+    text-align: center;
+}
+.about-container h2{
+    font-size: 3.5em;
+    text-align: center;
+    color: rgb(99, 99, 99);
+}
+.about-container{
+    width: 60%;
+    margin: 0 auto;
+}
+.team-details li,p{
+    font-size: 1.55em;
+}
+.team-container{
+    width: max-content;
+    margin: 0 auto;
+}
+.team-container p{
+    color: rgb(99, 99, 99);
+}
+.story-details-text{
+    text-indent: 3em;
+    text-align: justify;
+}
+.story-details-quoute{
+    color: rgb(99, 99, 99);
+    text-indent: 0;
+    text-align: center ;
+}
+.team-container img{
+    margin-top: 3em;
+}
+.team-details{
+    display:flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+.team-details-text{
+    margin-left: 2em;
+    margin-top: 3em;
+}
+
+/*this is for the home page*/
+.home-container h1{
+    font-size: 4em;
+    text-align: center;
+}
