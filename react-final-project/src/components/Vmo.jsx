@@ -6,13 +6,25 @@ export default function Vmo(props){
                 {props.item.map((vmo) => (
                     <div key={vmo.id}>
                         <li className="vmo-header">{vmo.name}</li>
-                        <ul>
+                        {vmo.description.length>1? (
+                            <ol>
                             {vmo.description.map((desc, index) => (
                                 <li key={index}>
-                                    - {desc}
+                                    {desc}
                                 </li>
                             ))}
-                        </ul>
+                            </ol>
+                        ):(
+
+                            <ul>
+                            {vmo.description.map((desc, index) => (
+                                <li key={index}>
+                                    {desc}
+                                </li>
+                            ))}
+                            </ul>
+                        )}
+                        
                     </div>
                 ))}
             </>
