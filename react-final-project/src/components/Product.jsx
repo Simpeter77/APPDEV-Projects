@@ -1,7 +1,9 @@
-import { useLocation } from "react-router-dom";
-export default function Product(){
+import { useLocation } from 'react-router-dom';
+import Cart from './Cart';
+export default function Product(props) {
+    const cart = props.cart;
     const location = useLocation();
-    const keyboard = location.state.keyboard;
+    const { keyboard } = location.state; // Retrieve the passed state
 
     function renderSwitches() {
     return (
@@ -56,6 +58,7 @@ export default function Product(){
             <p>Rating: {renderStars(keyboard.rating)} ({keyboard.rating})</p>
             <ul>{renderSwitches()}</ul>
             <button>Add to cart</button>
+            <Cart cart = {cart}/>
         </div>
         
       </div>

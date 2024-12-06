@@ -3,7 +3,7 @@ import About from "./About";
 
 const pesorate = 59.0;
 
-export default function Home(props) {
+export default function Home() {
     const hero = [
         {
             id: 1,
@@ -13,44 +13,93 @@ export default function Home(props) {
     ];
 
     const newArrival = [
-        {
-            id: 1,
-            img: "https://massdrop-s3.imgix.net/product-images/womier-stacked-acrylic-rgb-mechanical-keyboard/FP/YdlZrdh8TP6dHrrx32mY_1080x1080_MD-93147_01.png?auto=format&fm=jpg&fit=fill&w=820&h=547&bg=f0f0f0&dpr=1&chromasub=444&q=70",
-            name: "Womier K66 V2 Hotswap Acrylic RGB Mechanical Keyboard",
-            price: 55 * pesorate,
-        },
-        {
-            id: 2,
-            img: "https://massdrop-s3.imgix.net/product-images/keydous-nj80-bluetooth-rgb-hotswappable-keyboard/FP/erFboS5uSV2hA9MLKqzl_PC.png?auto=format&fm=jpg&fit=fill&w=820&h=547&bg=f0f0f0&dpr=1&chromasub=444&q=70",
-            name: "Keydous NJ80 Wireless RGB Hot-Swappable Keyboard",
-            price: 219 * pesorate,
-        },
-        {
-            id: 3,
-            img: "https://massdrop-s3.imgix.net/product-images/idobao-id80-crystal-75-gasket-hotswappable-keyboard-kit/FP/QONc7ASwQoy3Ld9HTWJh_RSBJ6u3BSFGhDYoPhSgm_PC.png?auto=format&fm=jpg&fit=fill&w=820&h=547&bg=f0f0f0&dpr=1&chromasub=444&q=70",
-            name: "IDOBAO ID80 Crystal Gasket Keyboard",
-            price: 229 * pesorate,
-        },
+        {id:1,
+            img:"https://massdrop-s3.imgix.net/product-images/womier-stacked-acrylic-rgb-mechanical-keyboard/FP/YdlZrdh8TP6dHrrx32mY_1080x1080_MD-93147_01.png?auto=format&fm=jpg&fit=fill&w=820&h=547&bg=f0f0f0&dpr=1&chromasub=444&q=70",
+            name:"Womier K66 V2 Hotswap Acrylic RGB Mechanical Keyboard",
+            price: 55* pesorate,
+            rating:4.7,
+            switch:
+            [
+                {id: 1, color: "Gateron Black"},
+                {id: 2, color: "Gateron Blue"},
+                {id: 3, color: "Gateron Brown"},
+                {id: 4, color: "Gateron Red"},
+                {id: 5, color: "Gateron Yellow"},
+            ],
+           },
+           {id:2,
+            img:"https://massdrop-s3.imgix.net/product-images/keydous-nj80-bluetooth-rgb-hotswappable-keyboard/FP/erFboS5uSV2hA9MLKqzl_PC.png?auto=format&fm=jpg&fit=fill&w=820&h=547&bg=f0f0f0&dpr=1&chromasub=444&q=70",
+            name:"Keydous NJ80 Wireless RGB Hot-Swappable Keyboard",
+            price: 219*pesorate,
+            rating:4.9,
+            switch:
+            [
+                {id: 1, color: "Gateron Black"},
+                {id: 2, color: "Gateron Blue"},
+                {id: 3, color: "Gateron Brown"},
+                {id: 4, color: "Gateron Red"},
+                {id: 5, color: "Gateron Yellow"},
+            ],
+           },
+           {id:3,
+            img:"https://massdrop-s3.imgix.net/product-images/idobao-id80-crystal-75-gasket-hotswappable-keyboard-kit/FP/QONc7ASwQoy3Ld9HTWJh_RSBJ6u3BSFGhDYoPhSgm_PC.png?auto=format&fm=jpg&fit=fill&w=820&h=547&bg=f0f0f0&dpr=1&chromasub=444&q=70",
+            name:"IDOBAO ID80 Crystal Gasket Keyboard ",
+            price: 229* pesorate,
+            rating:4.5,
+            switch:
+            [
+                {id: 1, color: "Gateron Black"},
+                {id: 2, color: "Gateron Blue"},
+                {id: 3, color: "Gateron Brown"},
+                {id: 4, color: "Gateron Red"},
+                {id: 5, color: "Gateron Yellow"},
+            ],
+           },
     ];
 
     const bestSeller = [
-        {
-            id: 4,
-            img: "https://massdrop-s3.imgix.net/product-images/wobkey-rainy75-mechanical-keyboard/FP/UwmgPuM5TnuVIWVrgTfe_lite_black.jpg?auto=format&fm=jpg&fit=fill&w=820&h=547&bg=f0f0f0&dpr=1&chromasub=444&q=70",
-            name: "WOBKEY Rainy75 Mechanical Keyboard",
-            price: 79 * pesorate,
-        },
-        {
-            id: 5,
-            img: "https://massdrop-s3.imgix.net/product-images/drop-expression-series-art-deco-gold-keyboard/FP/jdkkOZNSRdS05G6io9Qz_PC.png?auto=format&fm=jpg&fit=fill&w=820&h=547&bg=f0f0f0&dpr=1&chromasub=444&q=70",
-            name: "Drop Expression Series Mechtropolis Keyboard",
-            price: 99 * pesorate,
-        },
-        {id:6,
+        {id:4,
+            img:"https://massdrop-s3.imgix.net/product-images/wobkey-rainy75-mechanical-keyboard/FP/UwmgPuM5TnuVIWVrgTfe_lite_black.jpg?auto=format&fm=jpg&fit=fill&w=820&h=547&bg=f0f0f0&dpr=1&chromasub=444&q=70",
+            name:"WOBKEY Rainy75 Mechanical Keyboard",
+            price:79*pesorate,
+            rating: 4.2,
+            switch:
+            [
+                {id: 1, color: "Gateron Black"},
+                {id: 2, color: "Gateron Blue"},
+                {id: 3, color: "Gateron Brown"},
+                {id: 4, color: "Gateron Red"},
+                {id: 5, color: "Gateron Yellow"},
+            ],
+            },
+            {id:5,
+            img:"https://massdrop-s3.imgix.net/product-images/drop-expression-series-art-deco-gold-keyboard/FP/jdkkOZNSRdS05G6io9Qz_PC.png?auto=format&fm=jpg&fit=fill&w=820&h=547&bg=f0f0f0&dpr=1&chromasub=444&q=70",
+            name:"Drop Expression Series Mechtropolis Keyboard",
+            price:99*pesorate,
+            rating:4.1,
+            switch:
+            [
+                {id: 1, color: "Gateron Black"},
+                {id: 2, color: "Gateron Blue"},
+                {id: 3, color: "Gateron Brown"},
+                {id: 4, color: "Gateron Red"},
+                {id: 5, color: "Gateron Yellow"},
+            ],
+            },
+            {id:6,
             img:"https://massdrop-s3.imgix.net/product-images/magicforce-21-keys-v2/FP/59YmkBkRTcG8H0NASuPk_AI7B7416-copy-pc.jpg?auto=format&fm=jpg&fit=crop&w=1080&bg=f0f0f0&dpr=1&chromasub=444&q=70",
             name:"Magicforce 21-Key Mechanical Numpad V2",
             price:19*pesorate,
-        },
+            rating:4.25,
+            switch:
+            [
+                {id: 1, color: "Gateron Black"},
+                {id: 2, color: "Gateron Blue"},
+                {id: 3, color: "Gateron Brown"},
+                {id: 4, color: "Gateron Red"},
+                {id: 5, color: "Gateron Yellow"},
+            ],
+            },
     ];
 
     const custom = [
@@ -102,13 +151,19 @@ export default function Home(props) {
         return (
             <div className="new-container">
                 {newArrival.map((newItem) => (
-                    <Link to={`/products/${newItem.id}`} state={{ keyboard: newItem }} className="new-details" key={newItem.id}>
-                            <img src={newItem.img} alt={newItem.name} />
-                            <strong>
-                                <p>{newItem.name}</p>
-                            </strong>
-                            <p>₱{newItem.price}</p>
-                    </Link>
+                    <Link
+                    to={`/products/${newItem.id}`}
+                    state={{ keyboard: newItem }} // Pass product data via state
+                    className="new-details"
+                    key={newItem.id}
+                  >
+                    <img src={newItem.img} alt={newItem.name} />
+                    <strong>
+                      <p>{newItem.name}</p>
+                    </strong>
+                    <p>₱{newItem.price}</p>
+                  </Link>
+                  
                 ))}
             </div>
         );
@@ -118,13 +173,19 @@ export default function Home(props) {
         return (
             <div className="best-container">
                 {bestSeller.map((best) => (
-                    <Link to={`/products/${best.id}`} state={{ keyboard: best }} className="best-details">
-                            <img src={best.img} alt={best.name} />
-                            <strong>
-                                <p>{best.name}</p>
-                            </strong>
-                            <p>₱{best.price}</p>
-                    </Link>
+                    <Link
+                    to={`/products/${best.id}`}
+                    state={{ keyboard: best}} // Pass product data via state
+                    className="best-details"
+                    key={best.id}
+                  >
+                    <img src={best.img} alt={best.name} />
+                    <strong>
+                      <p>{best.name}</p>
+                    </strong>
+                    <p>₱{best.price}</p>
+                  </Link>
+                  
                 ))}
             </div>
         );

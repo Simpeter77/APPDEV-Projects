@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import Cart from "./Cart";
+import React,{ useState} from "react";
 const pesorate = 59;
 const keyboards = [
     {id:1,
@@ -172,6 +174,21 @@ const keyboards = [
         },
 ]
 export default function Products(){
+            const [cart, setCart] = useState([]);
+            const addToCart = (item) => {
+                setCart((prevCart) => {
+                    const existingItemIndex = prevCart.findIndex((cartItem) => cartItem.id === item.id);
+                    if (existingItemIndex !== -1) {
+                        const updatedCart = [...prevCart];
+                        updatedCart[existingItemIndex].quantity += 1;
+                        return updatedCart;
+                    } else {
+                        return [...prevCart, { ...item, quantity: 1 }];
+                    }
+                });
+            };
+        
+        
     function renderStars(rating) {
         const fullStars = Math.floor(rating); // Number of full stars
         const remainingFraction = rating - fullStars; // Fractional part of the rating
@@ -202,20 +219,22 @@ export default function Products(){
         return (
             <div className="products-container">
                 {keyboards.map((keyboard) => (
-                        <Link to ={`/products/${keyboard.id}`} state={{keyboard}}  className="products-details" key={keyboard.id}>
+                    <div  className="products-details" key={keyboard.id}>
+                        <Link to ={`/products/${keyboard.id}`} state={{keyboard}} >
                         <img src={keyboard.img} alt={keyboard.name} />
                         <strong><p>{keyboard.name}</p></strong>
                         <p>₱{keyboard.price}</p>
                         <p>Rating: {renderStars(keyboard.rating)} ({keyboard.rating})</p>
-                        <button> Add to Cart</button>
                         </Link>
-                ))}
+                        <button onClick={() => addToCart(keyboard)}>Add to Cart</button>
+                    </div>
+                ))}             
             </div>
         );
     }
     return(
         <div className="products-parent">
-            
+            <Cart cart = {cart}/>
             <h1>Check Out Our Products</h1>
             {renderKeyboards()}
         </div>

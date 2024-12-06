@@ -411,6 +411,24 @@ a{
     margin-bottom: auto;
     margin-left: -3em;
 }
+
+.cart-details img{
+    width: 15em;
+    border-radius: 2em;
+}
+.cart-details{
+    width: 90%;
+    display: flex;
+    gap:3em;
+    justify-content: flex-start;
+    justify-self: center;
+    align-items: center;
+    margin-left: 5em;
+    padding: 1em;
+    margin: 2em;
+    border: 1px solid black;
+    border-radius: 2em;
+}
 :root{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
