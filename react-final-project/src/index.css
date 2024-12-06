@@ -110,6 +110,7 @@
     background-color: royalblue;
     padding:1em 1em 1em 1em;
     color: white;
+    height: 35em;
     border-radius: 1em;
 }
 .new-container{
@@ -283,7 +284,7 @@ button:hover{
     padding: 1em;
     color: white;
     margin-top: 1em;
-    height: 43em;
+    height: 45em;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
@@ -375,6 +376,40 @@ a{
     justify-content:center;
     flex-direction: column;
     padding: 2em;
+}
+.product-specifics-right h2{
+    font-size: 2.5em;
+}
+.product-specifics-right button{
+    width: 50%;
+    font-size: 1.5em;
+}
+
+.switch-details{
+    color: white;
+}
+
+.switch-container{
+    display: flex;
+    width: 80%;
+    text-align: justify;
+    font-size: 1.5em;
+    height: max-content;
+    gap: 3em;
+    margin-left: -1.5em;
+}
+.switch-select{
+    background-color: aquamarine;
+}
+#switch-select{
+    color: white;
+    font-size: 0.75em;
+    background: royalblue;
+    height:3em;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: -3em;
 }
 :root{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

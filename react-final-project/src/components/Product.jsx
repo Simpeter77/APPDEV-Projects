@@ -3,6 +3,21 @@ export default function Product(){
     const location = useLocation();
     const keyboard = location.state.keyboard;
 
+    function renderSwitches() {
+    return (
+        <div className="switch-container">
+            <h3>Available Switches</h3>
+            <select name="Switches" id="switch-select">
+                {keyboard.switch.map((switchItem) => (
+                    <option key={switchItem.id} value={switchItem.color}>
+                        {switchItem.color}
+                    </option>
+                ))}
+            </select>
+        </div>
+    );
+}
+
     function renderStars(rating) {
         const fullStars = Math.floor(rating); // Number of full stars
         const remainingFraction = rating - fullStars; // Fractional part of the rating
@@ -39,6 +54,7 @@ export default function Product(){
             <h2>{keyboard.name}</h2>
             <h2>₱{keyboard.price}</h2>
             <p>Rating: {renderStars(keyboard.rating)} ({keyboard.rating})</p>
+            <ul>{renderSwitches()}</ul>
             <button>Add to cart</button>
         </div>
         
