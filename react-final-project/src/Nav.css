@@ -41,5 +41,6 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 10em;
+    width: max-content;
+    padding: 0 2em;
 }

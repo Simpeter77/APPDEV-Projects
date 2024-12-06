@@ -108,9 +108,8 @@
 .new-details{
     width: 30%;
     background-color: royalblue;
-    padding: 1em;
+    padding:1em 1em 1em 1em;
     color: white;
-    margin-top: -1em;
     border-radius: 1em;
 }
 .new-container{
@@ -142,9 +141,13 @@ background-color: white;
 color: royalblue;
   transition: 0.5s ease-in-out;
 }
+.best-details a{
+    height: max-content;
+    width: max-content;
+}
+
 .new-details:hover{
-    background-color: white;
-    color: royalblue;
+    background-image: url(https://www.shutterstock.com/image-illustration/3d-rendering-black-abstract-geometric-600nw-2421483579.jpg);
     transition: 0.5s ease-in-out;
 }
 
@@ -193,11 +196,10 @@ background-color: white;
 color: royalblue;
   transition: 0.5s ease-in-out;
 }
+
 .best-details:hover{
-    background-color: white;
-    color: royalblue;
-    transition: 0.5s ease-in-out;
-}
+    background-image: url(https://www.shutterstock.com/image-illustration/3d-rendering-black-abstract-geometric-600nw-2421483579.jpg);
+    transition: 0.5s ease-in-out;}
 
 /*for the custome keyboard banner in home page*/
 .custom-details{
@@ -244,11 +246,136 @@ color: royalblue;
     padding: 0.5em;
     border-radius: 0.25em;
 }
-.custom-details-right-specifics button:hover{
+.custom-details-right-specifics button a:hover{
     background-color: white;
     color: royalblue;
     transition: 0.4s ease-in-out;
 }
 button{
     font-family: 'Times New Roman', Times, serif;
+}
+.custom-details button a{
+    padding:0.5em;
+    width: 8em;
+    height: 2em;
+}
+.custom-details button{
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+/*for the products*/
+
+.products-details img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.6em;
+}
+.products-details{
+    width: 30%;
+    background-color: royalblue;
+    padding: 1em;
+    color: white;
+    margin-top: 1em;
+    height: 43em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.products-details:hover{
+    transition: 1s ease-in-out;
+    background-image: url(https://www.shutterstock.com/image-illustration/3d-rendering-black-abstract-geometric-600nw-2421483579.jpg);
+}
+
+.products-details button{
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.25em;
+    border-radius: 0.25em;
+    width: 40%;
+    margin-top: auto;
+    border: 2px white solid;
+}
+.products-details p{
+    font-size: 1.65em;
+}
+.products-details button:hover{
+    background-color: royalblue;
+    color: white;
+}
+.products-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+.products-parent h1{
+    font-size: 4em;
+    text-align: center;
+}
+
+/*for the stars*/
+.star {
+    font-size: 1.5rem;
+    color: #ffff00; /* Gold color for stars */
+}
+
+.star.half {
+    background: linear-gradient(90deg, #ffff00 50%, rgba(65, 105, 225, 0) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #e0e0e0;
+}
+
+.star.empty {
+    color: #e0e0e0; /* Grey color for empty stars */
+}
+
+
+/*for specific product*/
+.product-specifics{
+    background-color:rgb(100, 100, 100);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.product-specifics-left{
+    width: 50%;
+    background-color: rgb(255, 0, 0);
+}
+.product-specifics-left img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-specifics-right{
+    width: 46%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    padding: 2em;
+}
+:root{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
