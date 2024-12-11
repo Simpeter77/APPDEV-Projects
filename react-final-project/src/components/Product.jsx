@@ -7,7 +7,6 @@ export default function Product({ addToCart }) {
     const [currentImage, setCurrentImage] = useState("");
     const location = useLocation();
     const { keyboard } = location.state; 
-    const { productid } = useParams();
 
     useEffect(() => {
         if (selectedSwitch === "") {

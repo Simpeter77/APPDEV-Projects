@@ -1,12 +1,10 @@
 import { useLocation } from "react-router-dom";
 export default function Dev() {
-    const location = useLocation();
-    const person = location.state.person;
-
+    const person = useLocation().state.member;
     return (
         <div className="resume-container">
             <div className="profile-header">
-                <img src={person.img} alt={person.name} className="profile-img" />
+                 <img src={`../${person.img}`} alt={person.name} className="profile-img" />
                 <div className="profile-info">
                     <h1>{person.name}</h1>
                     <p><strong>{person.position}</strong></p>

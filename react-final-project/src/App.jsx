@@ -32,8 +32,7 @@ function App() {
       }
     });
   };
-  
-  
+
   const removeFromCart = (itemToRemove) => {
     setCart((prevCart) => prevCart.filter((item) => item.uniqueId !== itemToRemove.uniqueId));
   };
@@ -969,7 +968,7 @@ const story = [
 const team = [
     { 
         id: 1, 
-        img: "src/assets/james.jpg", 
+        img: "/src/assets/james.jpg", 
         name: "James Peter Gonzaga", 
         position: "Founder & CEO", 
         quote: "Turning ideas into realities one keystroke at a time.", 

@@ -4,7 +4,7 @@ export default function Developer({ team }){
         return (
             <div className="dev-container">
                 {team.map((t) => (
-                    <Link to={`/developer/${t.id}`} state={{person: t}}>
+                    <Link to={`/developer/${t.id}`} state={{member: t}}>
                         <div className="dev-details" key={t.id}>
                         <img src={t.img} alt={t.name} className="dev-img" />
                         <h1>{t.name}</h1>
