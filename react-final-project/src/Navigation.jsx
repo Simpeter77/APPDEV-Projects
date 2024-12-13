@@ -11,7 +11,7 @@ export default function Navigation() {
                 <li><NavLink to="/showcase" className={({ isActive }) => isActive ? "active" : ""}>Showcase</NavLink></li>
                 <li><NavLink to="/products" className={({ isActive }) => isActive ? "active" : ""}>Products</NavLink></li>
                 <li><NavLink to="/artisan" className={({ isActive }) => isActive ? "active" : ""}>Artisan</NavLink></li>
-                <li><NavLink to="/reviews" className={({ isActive }) => isActive ? "active" : ""}>Reviews</NavLink></li>
+                <li><NavLink to="/profile" className={({ isActive }) => isActive ? "active" : ""}>Company</NavLink></li>
                 <li><NavLink to="/developer" className={({ isActive }) => isActive ? "active" : ""}>Developer</NavLink></li>
                 <li><NavLink to="/cart" className={({ isActive }) => isActive ? "active" : ""}>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">

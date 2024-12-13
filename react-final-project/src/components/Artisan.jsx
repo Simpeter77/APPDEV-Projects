@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Artisan({ artisan }) {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+},[]);
   const [gasket, setGasket] = useState(null);
   const [switches, setSwitches] = useState(null);
   const [keycap, setKeycap] = useState(null);

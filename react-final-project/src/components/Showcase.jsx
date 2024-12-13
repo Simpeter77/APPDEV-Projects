@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
-
+import { useEffect } from "react";
 export default function Showcase({ keyboards }) {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[]);
     function renderStars(rating) {
         const fullStars = Math.floor(rating);
         const remainingFraction = rating - fullStars;
@@ -55,7 +58,7 @@ export default function Showcase({ keyboards }) {
     }
 
     return <div className="showcase-parent">
-        <h1>What Our Customers Have to say About Our Products</h1>
+        <h1 id="showcase-header">What Our Customers Have to say About Our Products</h1>
         {renderShowcase()}
         </div>;
 }

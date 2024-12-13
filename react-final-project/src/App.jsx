@@ -7,11 +7,11 @@ import Developer from './components/Developer';
 import Products from './components/Products';
 import Profile from './components/Profile';
 import Showcase from './components/Showcase';
-import Reviews from './components/Reviews';
 import Artisan from './components/Artisan';
 import Product from './components/Product';
 import Cart from './components/Cart';
 import Dev from './components/Dev';
+import Footer from './Footer';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -32,7 +32,8 @@ function App() {
       }
     });
   };
-
+  
+  
   const removeFromCart = (itemToRemove) => {
     setCart((prevCart) => prevCart.filter((item) => item.uniqueId !== itemToRemove.uniqueId));
   };
@@ -968,7 +969,7 @@ const story = [
 const team = [
     { 
         id: 1, 
-        img: "/src/assets/james.jpg", 
+        img: "src/assets/james.jpg", 
         name: "James Peter Gonzaga", 
         position: "Founder & CEO", 
         quote: "Turning ideas into realities one keystroke at a time.", 
@@ -985,7 +986,7 @@ const team = [
             "Secured $500K in seed funding to expand product lines and enter international markets.",
             "Developed and launched 15+ award-winning keyboard models praised for design and performance."
         ],
-        education: "Bachelor's Degree in Industrial Design, University of the Philippines (2012)",
+        education: "Bachelor of Science in Computer Science - University of Baguio (2027)",
         certifications: [
             "Certified Product Manager (CPM), AIPMM (2016)",
             "Leadership Excellence Certificate, Harvard Business School Online (2020)"
@@ -1230,19 +1231,82 @@ const artisan = [
   },
 ];
 
-const reviews = [
-    { id: 1, name: "Sweetie Foxx", date: "August 9, 2024", review: "The product was authentic and the delivery was fast.", rating: 5 },
-    { id: 2, name: "Liam Brown", date: "August 10, 2024", review: "Great quality, but the packaging could be improved.", rating: 4 },
-    { id: 3, name: "Ella Green", date: "August 11, 2024", review: "Excellent service and premium product. Highly recommend!", rating: 5 },
-    { id: 4, name: "Aiden Clark", date: "August 12, 2024", review: "The product arrived late, but it was worth the wait.", rating: 4 },
-    { id: 5, name: "Olivia Smith", date: "August 13, 2024", review: "Fantastic experience! Customer support was very helpful.", rating: 5 },
-    { id: 6, name: "Ethan Johnson", date: "August 14, 2024", review: "The item had minor defects, but the return process was smooth.", rating: 3 },
-    { id: 7, name: "Sophia Davis", date: "August 15, 2024", review: "Amazing product and fast shipping! Will buy again.", rating: 5 },
-    { id: 8, name: "Mason Wilson", date: "August 16, 2024", review: "Not as described, but customer service handled it well.", rating: 3 },
-    { id: 9, name: "Isabella Moore", date: "August 17, 2024", review: "Perfect! Exactly what I needed and came on time.", rating: 5 },
-    { id: 10, name: "James Taylor", date: "August 18, 2024", review: "Good quality but slightly overpriced.", rating: 4 }
+const developers = [
+    {
+        id: 1,
+        name: "James Peter V. Gonzaga",
+        img:"src/assets/james.jpg",
+        vouch: 69,
+        role: "Full-Stack Developer",
+        bio: "James Peter V. Gonzaga is a passionate Computer Science student at the University of Baguio with expertise in creating dynamic and user-friendly web applications. He specializes in both front-end and back-end development and has a deep interest in technology innovation and design.",
+        contact: {
+            email: "peterjamesgonzaga@gmail.com",
+            phone: "+639708161548",
+            github: "https://github.com/Simpeter77",
+        },
+        education: {
+            university: "University of Baguio",
+            degree: "Bachelor of Science in Computer Science",
+            graduationYear: 2027,
+            relevantCourses: [
+                "Web Development",
+                "Data Structures and Algorithms",
+                "Database Management Systems",
+                "Software Engineering",
+                "Human-Computer Interaction"
+            ]
+        },
+        certifications: [
+            "Certified React Developer - Udemy",
+            "Front-End Web Development Certification - freeCodeCamp",
+            "JavaScript Algorithms and Data Structures - freeCodeCamp"
+        ],
+        workExperience: [
+            {
+                company: "Tech Innovators Inc.",
+                role: "Web Development Intern",
+                duration: "June 2023 - August 2023",
+                responsibilities: [
+                    "Developed dynamic web pages using React and Tailwind CSS.",
+                    "Optimized website performance, reducing load time by 30%.",
+                    "Collaborated with senior developers to implement new features."
+                ]
+            },
+            {
+                company: "Freelance Projects",
+                role: "Freelance Web Developer",
+                duration: "March 2022 - Present",
+                responsibilities: [
+                    "Designed and built custom websites for small businesses.",
+                    "Integrated payment gateways and customer management systems.",
+                    "Provided ongoing technical support and maintenance."
+                ]
+            }
+        ],
+        skills: [
+            "React", 
+            "JavaScript", 
+            "CSS", 
+            "HTML", 
+            "Git & GitHub", 
+            "Bootstrap",
+        ],
+        achievements: [
+            "Dean's Lister for 3 consecutive semesters.",
+        ],
+        hobbies: [
+            "Building custom mechanical keyboards",
+            "Participating in coding challenges",
+            "Gaming and esports",
+            "Exploring new technologies"
+        ],
+        goals: [
+            "To become a lead developer in a renowned tech company.",
+            "To contribute to open-source projects in the mechanical keyboard community.",
+            "To mentor aspiring developers and give back to the tech community."
+        ],
+    }
 ];
-
 
   return (
     <>
@@ -1250,6 +1314,7 @@ const reviews = [
       <Routes>
       <Route path="/" element={<Home newarrival={keyboards.slice(0, 3)} bestseller={keyboards.slice(3, 6)} team={team} story ={story} vmo={vmo} />} />
         <Route path="/about" element={<About team={team} story ={story} vmo={vmo} />} />
+
         <Route path="/products">
         <Route index element={<Products keyboards={keyboards} />} />
         <Route
@@ -1258,15 +1323,15 @@ const reviews = [
         />
         </Route>
 
-        <Route path="/developer">
-        <Route index element={<Developer team={team} />} />
+        <Route path="/profile">
+        <Route index element={<Profile team={team} />} />
         <Route
-            path=":developerid"
+            path=":Profileid"
             element={<Dev team={team} />} 
         />
         </Route>
-        <Route path="/reviews" element={<Reviews reviews={reviews}/>} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/developer" element={<Developer developers={developers}/>} />
+        <Route path="/profile" element={<Profile person ={developers}/>} />
         <Route path="/artisan" element={<Artisan artisan = {artisan} />} />
         <Route path="/showcase" element={<Showcase keyboards={keyboards}/>} />
         <Route
@@ -1274,6 +1339,7 @@ const reviews = [
           element={<Cart cart={cart} removeFromCart={removeFromCart} keyboards={keyboards} clearCart={clearCart}/>} 
         />
       </Routes>
+      <Footer/>
     </>
   );
 }

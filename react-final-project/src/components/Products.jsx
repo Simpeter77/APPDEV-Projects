@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import React from "react";
+import { useEffect } from "react";
 export default function Products(props) {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[]);
     function renderStars(rating) {
         const fullStars = Math.floor(rating);
         const remainingFraction = rating - fullStars; 
@@ -44,6 +48,7 @@ export default function Products(props) {
     return (
         <div className="products-parent">
             {renderKeyboards()}
+            <br />
         </div>
     );
 }

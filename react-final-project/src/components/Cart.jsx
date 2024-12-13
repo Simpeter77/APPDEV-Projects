@@ -1,7 +1,10 @@
 import { useState } from "react";
 import Products from "./Products";
-
+import { useEffect } from "react";
 function Cart({ cart, removeFromCart, keyboards, clearCart: parentClearCart }) {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[]);
     const [showCheckout, setShowCheckout] = useState(false);
     const [paymentDetails, setPaymentDetails] = useState({
         cardNumber: "",

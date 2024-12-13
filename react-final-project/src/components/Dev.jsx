@@ -1,10 +1,16 @@
 import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 export default function Dev() {
-    const person = useLocation().state.member;
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[]);
+    const location = useLocation();
+    const person = location.state.person;
+
     return (
         <div className="resume-container">
             <div className="profile-header">
-                 <img src={`../${person.img}`} alt={person.name} className="profile-img" />
+                <img src={`../${person.img}`} alt={person.name} className="profile-img" />
                 <div className="profile-info">
                     <h1>{person.name}</h1>
                     <p><strong>{person.position}</strong></p>

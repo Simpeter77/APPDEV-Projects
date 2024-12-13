@@ -1,7 +1,12 @@
 import Vmo from "./Vmo";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import React from "react";
 export default function About({vmo, story, team }) {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[]);
+
     function renderStory(){
         return(
             <div className="story-container">
@@ -21,7 +26,7 @@ export default function About({vmo, story, team }) {
         return (
             <ol className="team-container">
                 {team.map((person) => (
-                    <Link to={`/developer/${person.id}`} state={{person: person}} key={person.id} className="team-details">
+                    <Link to={`/profile/${person.id}`} state={{person: person}} key={person.id} className="team-details">
                         <img src={person.img} alt="" />
                         <div className="team-details-text">
                             <li className="person-header"><strong>{person.name}</strong> - {person.position}</li>
@@ -34,7 +39,7 @@ export default function About({vmo, story, team }) {
                         </div>
                     </Link>
                 ))}
-                <Link to='/developer'>
+                <Link to='/profile'>
                 <button id='team-btn'>Learn More</button>
                 </Link>
             </ol>

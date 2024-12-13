@@ -1,7 +1,10 @@
-import { useLocation, useParams } from 'react-router-dom';
+import { useLocation} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 export default function Product({ addToCart }) {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[]);
     const [cart, setCart] = useState([]);
     const [selectedSwitch, setSelectedSwitch] = useState("");
     const [currentImage, setCurrentImage] = useState("");
@@ -226,6 +229,7 @@ export default function Product({ addToCart }) {
                 {renderIncluded()}
             </div>
             {renderReviews()}
+            <br />
         </>
     );
 }
