@@ -99,7 +99,7 @@ export default function Home({newarrival,bestseller,team,story,vmo} ) {
 
     return (
         <div className="home-container">
-            <h1>Welcome to Keystaxx</h1>
+            <h1>Welcome to KeyStaxx</h1>
             <hr className="home-hr" />
             {renderHero()}
             <h1>Our Products</h1>
