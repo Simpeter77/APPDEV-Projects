@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-export default function Profile({team}){
+import Reviews from "./Reviews";
+export default function Profile({team, reviews}){
     useEffect(()=>{
         window.scrollTo(0,0);
     },[]);
@@ -42,6 +43,7 @@ export default function Profile({team}){
         <div className="">
             {renderDevs()}
         </div>
+        <Reviews review={reviews}/>
         </>
     )
 }

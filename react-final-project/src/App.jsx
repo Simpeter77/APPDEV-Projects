@@ -53,7 +53,7 @@ const keyboards = [
         ],
         name: "Womier K66 V2 Hotswap Acrylic RGB Mechanical Keyboard",
         price: 55 * pesorate,
-        rating: 4.7,
+        rating: 4.2,
         switch: [
             {id: 1, color: "Gateron Black"},
             {id: 2, color: "Gateron Blue"},
@@ -121,6 +121,13 @@ const keyboards = [
                     review: "This is by far the best keyboard I've used. The build quality is top-notch, and the key presses are smooth and satisfying."
                 }
             
+        ],
+        manual:[
+            {
+                troubleshoot: "If your keyboard is not responding, ensure that it is properly connected to your computer or that the batteries are charged. For wireless keyboards, try re-pairing the device with your system.",
+                maintenance: "Clean your keyboard regularly with compressed air to remove dust. Use a damp microfiber cloth to clean the surface. Avoid using harsh chemicals that could damage the keys.",
+                setup: "Plug in the keyboard via USB or connect via Bluetooth by following the pairing instructions in the Bluetooth settings of your device. If using a wired keyboard, ensure the cable is securely connected."
+              }
         ]
     },
     {
@@ -132,7 +139,7 @@ const keyboards = [
         ],
         name: "Keydous NJ80 Wireless RGB Hot-Swappable Keyboard",
         price: 219 * pesorate,
-        rating: 4.9,
+        rating: 4.8,
         switch: [
             {id: 1, color: "Gateron Black"},
             {id: 2, color: "Gateron Blue"},
@@ -196,7 +203,14 @@ const keyboards = [
                 rating: 5,
                 review: "Absolutely love this keyboard! The RGB is gorgeous, and the wireless connection is flawless. One of the best purchases I've made!"
             }
-        ]
+        ],
+        manual:[
+            {
+            troubleshoot: "If keys are sticking, try cleaning underneath them with a small brush. If the issue persists, check the keyboard's software settings or reinstall the drivers.",
+            maintenance: "Avoid eating or drinking near the keyboard. Periodically unplug the keyboard and clean between the keys using a can of compressed air.",
+            setup: "For wireless keyboards, ensure Bluetooth is enabled on your device. Press the connect button on the keyboard and follow the pairing instructions. Wired keyboards should work immediately after plugging in."
+          }
+        ],
     },
     {
         id: 3,
@@ -207,7 +221,7 @@ const keyboards = [
         ],
         name: "IDOBAO ID80 Crystal Gasket Keyboard",
         price: 229 * pesorate,
-        rating: 4.5,
+        rating: 4.8,
         switch: [
             {id: 1, color: "Gateron Black"},
             {id: 2, color: "Gateron Blue"},
@@ -272,7 +286,14 @@ const keyboards = [
                 rating: 5,
                 review: "The ID80 is the perfect blend of aesthetics and performance. The typing feel is fantastic, and the transparency looks amazing under the lights."
             }
-        ]
+        ],
+        manual:[
+            {
+            troubleshoot: "If keys are sticking, try cleaning underneath them with a small brush. If the issue persists, check the keyboard's software settings or reinstall the drivers.",
+            maintenance: "Avoid eating or drinking near the keyboard. Periodically unplug the keyboard and clean between the keys using a can of compressed air.",
+            setup: "For wireless keyboards, ensure Bluetooth is enabled on your device. Press the connect button on the keyboard and follow the pairing instructions. Wired keyboards should work immediately after plugging in."
+          }
+        ],
         
     },
     {
@@ -284,7 +305,7 @@ const keyboards = [
         ],
         name: "WOBKEY Rainy75 Mechanical Keyboard",
         price: 79 * pesorate,
-        rating: 4.2,
+        rating: 4.4,
         switch: [
             {id: 1, color: "Gateron Black"},
             {id: 2, color: "Gateron Blue"},
@@ -347,6 +368,12 @@ const keyboards = [
                 rating: 5,
                 review: "Perfect keyboard for daily use! It's compact, the switches are responsive, and the RGB effects are gorgeous. Highly recommend it!"
             }
+        ],
+        manual:[{
+            troubleshoot: "If keys are sticking, try cleaning underneath them with a small brush. If the issue persists, check the keyboard's software settings or reinstall the drivers.",
+            maintenance: "Avoid eating or drinking near the keyboard. Periodically unplug the keyboard and clean between the keys using a can of compressed air.",
+            setup: "For wireless keyboards, ensure Bluetooth is enabled on your device. Press the connect button on the keyboard and follow the pairing instructions. Wired keyboards should work immediately after plugging in."
+          },
         ]
         
     }
@@ -360,7 +387,7 @@ const keyboards = [
         ],
         name: "Drop Expression Series Mechtropolis Keyboard",
         price: 99 * pesorate,
-        rating: 4.1,
+        rating: 4.2,
         switch: [
             {id: 1, color: "Gateron Black"},
             {id: 2, color: "Gateron Blue"},
@@ -423,6 +450,12 @@ const keyboards = [
                 rating: 5,
                 review: "Highly recommend this keyboard! The build quality is top-notch, and it’s a pleasure to type on. The RGB is customizable, and the Gateron switches are a great touch."
             }
+        ],
+        manual:[{
+            troubleshoot: "If keys are sticking, try cleaning underneath them with a small brush. If the issue persists, check the keyboard's software settings or reinstall the drivers.",
+            maintenance: "Avoid eating or drinking near the keyboard. Periodically unplug the keyboard and clean between the keys using a can of compressed air.",
+            setup: "For wireless keyboards, ensure Bluetooth is enabled on your device. Press the connect button on the keyboard and follow the pairing instructions. Wired keyboards should work immediately after plugging in."
+          },
         ]
         
     }
@@ -435,7 +468,7 @@ const keyboards = [
         ],
         name: "Magicforce 21-Key Mechanical Numpad V2",
         price: 19 * pesorate,
-        rating: 4.25,
+        rating: 4.2,
         switch: [
             {id: 1, color: "Gateron Black"},
             {id: 2, color: "Gateron Blue"},
@@ -497,7 +530,12 @@ const keyboards = [
                 rating: 5,
                 review: "Perfect for gaming and productivity. The keys are comfortable to press, and the layout is great for quick number input."
             }
-        ]
+        ],
+        manual:[{
+            troubleshoot: "If keys are sticking, try cleaning underneath them with a small brush. If the issue persists, check the keyboard's software settings or reinstall the drivers.",
+            maintenance: "Avoid eating or drinking near the keyboard. Periodically unplug the keyboard and clean between the keys using a can of compressed air.",
+            setup: "For wireless keyboards, ensure Bluetooth is enabled on your device. Press the connect button on the keyboard and follow the pairing instructions. Wired keyboards should work immediately after plugging in."
+          },]
     }
     ,
     {
@@ -509,7 +547,7 @@ const keyboards = [
         ],
         name: "MelGeek Mojo68 Wireless Plastic Keyboard",
         price: 199 * pesorate,
-        rating: 4,
+        rating: 4.0,
         switch: [
             {id: 1, color: "Gateron Black"},
             {id: 2, color: "Gateron Blue"},
@@ -572,6 +610,12 @@ const keyboards = [
                 rating: 4,
                 review: "Great keyboard for casual gaming and work. The Bluetooth connection is quick, and the RGB is bright. Wish the keycaps were more premium."
             }
+        ],
+        manual:[ {
+            troubleshoot: "If the keyboard is not recognized by your device, try restarting your computer or reconnecting the keyboard. For wireless models, ensure that the receiver is properly connected and powered.",
+            maintenance: "Use a soft brush to remove dust from the keys and prevent dirt from accumulating. Avoid using rough cloths or sponges that could scratch the surface.",
+            setup: "Insert the USB receiver into your computer's USB port or follow the instructions in your device's Bluetooth settings to pair a wireless keyboard."
+          },
         ]
     }
     ,
@@ -584,7 +628,7 @@ const keyboards = [
             ],
         name: "SHIFT V2 Mechanical Keyboard",
         price: 179 * pesorate,
-        rating: 4.5,
+        rating:4.6,
         switch: [
             {id: 1, color: "Gateron Black"},
             {id: 2, color: "Gateron Blue"},
@@ -613,40 +657,46 @@ const keyboards = [
         ],
         reviews: [
             {
-                id: "1",
+                id: 1,
                 date:"February 2, 2024",
                 username: "TechLover",
-                rating: "5",
+                rating: 5,
                 review: "This keyboard is amazing! The typing experience is smooth, and the RGB is stunning. Highly recommend it for both work and gaming."
             },
             {
-                id: "2",
+                id: 2,
                 date:"February 4, 2024",
                 username: "GameMaster",
-                rating: "4",
+                rating: 4,
                 review: "Solid keyboard with great feel. The switches are smooth, but I feel the build could be a bit more premium for the price."
             },
             {
-                id: "3",
+                id: 3,
                 date:"February 6, 2024",
                 username: "CreativeSoul",
-                rating: "5",
+                rating: 5,
                 review: "I love the SHIFT V2! The customization options for the RGB and switches are perfect for my setup. It looks and feels fantastic."
             },
             {
-                id: "4",
+                id: 4,
                 date:"February 7, 2024",
                 username: "OfficeGuru",
-                rating: "4",
+                rating: 4,
                 review: "Great keyboard, but the space bar stabilizers are a bit wobbly. Otherwise, it's a fantastic product, and the RGB is beautiful."
             },
             {
-                id: "5",
+                id: 5,
                 date:"February 10, 2024",
                 username: "SarahG",
-                rating: "5",
+                rating: 5,
                 review: "Perfect for my needs! The keyboard is responsive, and the RGB lighting is vibrant. It's the best mechanical keyboard I've used so far!"
             }
+        ],
+        manual:[{
+            troubleshoot: "If the keyboard is not typing correctly, check the connection and ensure the drivers are up-to-date. Try testing the keyboard on another device to determine if the issue is with the keyboard or your system.",
+            maintenance: "Gently wipe the keyboard's surface to remove any dirt or oils from hands. Use a microfiber cloth for a thorough cleaning.",
+            setup: "For wireless keyboards, follow the pairing instructions provided in the manual. If using a wired keyboard, it should be ready to use once plugged in."
+          },
         ]
     }
     ,
@@ -659,7 +709,7 @@ const keyboards = [
         ],
         name: "CTRL V2 Mechanical Keyboard",
         price: 149 * pesorate,
-        rating: 3.75,
+        rating: 3.6,
         switch: [
             {id: 1, color: "Gateron Black"},
             {id: 2, color: "Gateron Blue"},
@@ -688,40 +738,46 @@ const keyboards = [
         ],
         reviews: [
             {
-                id: "1",
+                id: 1,
                 date:"March 5, 2024",
                 username: "KeyboardFanatic",
-                rating: "4",
+                rating: 4,
                 review: "A solid keyboard overall. The keys are responsive, and the RGB lighting is vibrant. However, the stabilizers on the spacebar could be improved."
             },
             {
-                id: "2",
+                id: 2,
                 date:"March 7, 2024",
                 username: "JohnDoe",
-                rating: "3",
+                rating: 3,
                 review: "The keyboard feels good, but there are some minor issues with the keycaps. They're a bit thin for my liking. Still, a good buy for the price."
             },
             {
-                id: "3",
+                id: 3,
                 date:"March 10, 2024",
                 username: "TechReviewMaster",
-                rating: "4",
+                rating: 4,
                 review: "I really like the feel of the Gateron switches. The customization options are nice, but the build quality could be better for the price."
             },
             {
-                id: "4",
+                id: 4,
                 date:"March 11, 2024",
                 username: "GamerGirl",
-                rating: "3",
+                rating: 3,
                 review: "I love the design and features, but the typing experience isn't as smooth as I expected. The keys sometimes feel a little bit too stiff."
             },
             {
-                id: "5",
+                id: 5,
                 date:"March 12, 2024",
                 username: "MikeW",
-                rating: "4",
+                rating: 4,
                 review: "Overall, a good keyboard with excellent customization. The RGB lighting is great, but the keyboard is a bit heavy for a full-size layout."
             }
+        ],
+        manual:[{
+            troubleshoot: "If the keyboard's display is flickering, adjust the brightness settings in the software or reset the keyboard's backlight settings. Ensure your device's power supply is stable.",
+            maintenance: "Store the keyboard in a dust-free environment and avoid exposure to liquids. Periodically clean the keyboard to keep it looking new and free from debris.",
+            setup: "For setup, follow the instructions to connect the keyboard via Bluetooth or USB. Use the software to adjust backlight settings and customize macros, if applicable."
+          },
         ]
     }
     , 
@@ -762,40 +818,46 @@ const keyboards = [
         ],
         reviews: [
             {
-                id: "1",
+                id: 1,
                 date:"April 2, 2024",
                 username: "TechSavvy",
-                rating: "4",
+                rating: 4,
                 review: "Great keyboard for daily use! The low-profile switches are comfortable, and the wireless feature is seamless. The only downside is the keycaps could be better."
             },
             {
-                id: "2",
+                id: 2,
                 date:"April 5, 2024",
                 username: "SophieP",
-                rating: "5",
+                rating: 5,
                 review: "Love this keyboard! It's compact and sleek. The low-profile keys feel fantastic, and the RGB lighting is gorgeous. Highly recommend!"
             },
             {
-                id: "3",
+                id: 3,
                 date:"April 10, 2024",
                 username: "JohnTech",
-                rating: "4",
+                rating: 4,
                 review: "This keyboard is excellent for typing. The low-profile keys take a little getting used to, but once you adjust, it's great. Battery life could be improved."
             },
             {
-                id: "4",
+                id: 4,
                 date:"April 15, 2024",
                 username: "GamerX",
-                rating: "3",
+                rating: 3,
                 review: "Nice keyboard overall, but the typing experience is not as responsive as I expected. The keys feel a bit soft for gaming."
             },
             {
-                id: "5",
+                id: 5,
                 date:"April 20, 2024",
                 username: "LenaL",
-                rating: "4",
+                rating: 4,
                 review: "The design is sleek and modern, and the typing experience is good. I just wish the build quality felt a bit sturdier. Otherwise, it's a great buy!"
             }
+        ],
+        manual:[{
+            troubleshoot: "If your keyboard's keys feel unresponsive, check the connection and ensure the keyboard is plugged in securely. For Bluetooth keyboards, ensure that the battery is charged and the Bluetooth connection is active.",
+            maintenance: "To maintain optimal performance, clean the keyboard regularly using compressed air. If you notice any sticky keys, gently remove the keycaps and clean underneath them.",
+            setup: "Connect the keyboard by plugging it into a USB port or use Bluetooth pairing settings. Some models may require installing specific drivers, which can be downloaded from the manufacturer's website."
+          },
         ]
     }
     , 
@@ -836,40 +898,46 @@ const keyboards = [
         ],
         reviews: [
             {
-                id: "1",
+                id: 1,
                 date:"May 9, 2024",
                 username: "GameMasterX",
-                rating: "5",
+                rating: 5,
                 review: "This is an amazing gaming keyboard! The rapid trigger switches are incredibly responsive, and the build quality is top-notch. The RGB lighting looks great too!"
             },
             {
-                id: "2",
+                id: 2,
                 date:"May 11, 2024",
                 username: "SpeedyGamer",
-                rating: "4",
+                rating: 4,
                 review: "I love the speed of the keys. The magnetic switches are super fast, but the keyboard could use more customization options for the lighting."
             },
             {
-                id: "3",
+                id: 3,
                 date:"May 14, 2024",
                 username: "TechNova",
-                rating: "4",
+                rating: 4,
                 review: "Great keyboard for gaming. The magnetic switches are definitely a game-changer. The only downside is the keycaps feel a little too lightweight."
             },
             {
-                id: "4",
+                id: 4,
                 date:"May 22, 2024",
                 username: "PixelPusher",
-                rating: "3",
+                rating: 3,
                 review: "While the response time is great, I had some issues with the software. It's not as intuitive as I hoped, but the keyboard works fine otherwise."
             },
             {
-                id: "5",
+                id: 5,
                 date:"May 31, 2024",
                 username: "TheGamingGuru",
-                rating: "4",
+                rating: 4,
                 review: "Solid keyboard for fast-paced gaming. The RGB lighting is impressive, but I would have preferred a more durable feel to the overall build."
             }
+        ],
+        manual:[{
+            troubleshoot: "If the keyboard is making an unusual sound when typing, check for debris or obstructions under the keys. If the noise persists, the switches may need to be replaced.",
+            maintenance: "Regularly remove keycaps and clean the switches underneath. Use a soft cloth to wipe the keyboard and keep it free of fingerprints and grime.",
+            setup: "Simply plug the keyboard into a USB port and follow on-screen instructions if prompted. If using a wireless keyboard, ensure Bluetooth is enabled and follow the pairing steps."
+          },
         ]
     }
     ,
@@ -883,7 +951,7 @@ const keyboards = [
         ],
         name: "Mistel MD750 Delight Mechanical Keyboard",
         price: 175 * pesorate,
-        rating: 4.25,
+        rating: 4.4,
         switch: [
             {id: 1, color: "Gateron Black"},
             {id: 2, color: "Gateron Blue"},
@@ -911,40 +979,46 @@ const keyboards = [
         ],
         reviews: [
             {
-                id: "1",
+                id: 1,
                 date:"July, 6, 2024",
                 username: "KeyMasterX",
-                rating: "5",
+                rating: 5,
                 review: "A fantastic mechanical keyboard! The 75% layout is perfect for my desk, and the typing experience is smooth with the Gateron switches."
             },
             {
-                id: "2",
+                id: 2,
                 date:"July, 9, 2024",
                 username: "ErgoGamer",
-                rating: "4",
+                rating: 4,
                 review: "This keyboard is a solid choice. The switches are responsive, and I love the compact design. The RGB lighting could be a bit brighter, though."
             },
             {
-                id: "3",
+                id: 3,
                 date:"July, 12, 2024",
                 username: "TechPro",
-                rating: "4",
+                rating: 4,
                 review: "Great keyboard for the price. It's comfortable for long typing sessions, and the design looks sleek. I wish the stabilizers were a bit smoother."
             },
             {
-                id: "4",
+                id: 4,
                 date:"July, 20, 2024",
                 username: "DeskWarrior",
-                rating: "4",
+                rating: 4,
                 review: "Very pleased with this keyboard. The build quality is solid, and the compact layout fits perfectly on my desk. The RGB lighting is nice, but not the brightest."
             },
             {
-                id: "5",
+                id: 5,
                 date:"July, 25, 2024",
                 username: "SmoothTypist",
-                rating: "5",
+                rating: 5,
                 review: "Love this keyboard! The switches are amazing, and the design is elegant yet functional. It fits perfectly in my home office setup."
             }
+        ],
+        manual:[{
+            troubleshoot: "If some keys aren't responding, test the keyboard on another device to confirm if the issue is with the keyboard or the computer. Reset the keyboard's configuration if necessary.",
+            maintenance: "Store your keyboard on a flat, stable surface. Ensure that the keyboard is not exposed to extreme temperatures, which could cause damage to the internal circuitry.",
+            setup: "Install any required drivers using the included disc or download the latest drivers from the manufacturer's website. For wireless keyboards, ensure that the device's Bluetooth is turned on."
+          },
         ]
     }
     ,
@@ -1307,6 +1381,43 @@ const developers = [
         ],
     }
 ];
+const companyReviews = [
+    {
+      id: 1,
+      date: "February 2, 2024",
+      username: "TechLover",
+      rating: 5,
+      review: "This company provides amazing products! Great customer support and quality services.",
+    },
+    {
+      id: 2,
+      date: "February 4, 2024",
+      username: "GameMaster",
+      rating: 4,
+      review: "Solid products and customer service. However, there's room for improvement in shipping times.",
+    },
+    {
+      id: "3",
+      date: "February 6, 2024",
+      username: "CreativeSoul",
+      rating: "5",
+      review: "Fantastic experience! Excellent service and the products always exceed expectations. Highly recommend!",
+    },
+    {
+      id: 4,
+      date: "February 7, 2024",
+      username: "OfficeGuru",
+      rating: 4,
+      review: "Great company with a strong reputation. A little more attention to detail in packaging would make it perfect.",
+    },
+    {
+      id: 5,
+      date: "February 10, 2024",
+      username: "SarahG",
+      rating: 5,
+      review: "The customer service is top-notch, and I’m always happy with my purchases. A reliable company through and through.",
+    },
+  ];
 
   return (
     <>
@@ -1324,7 +1435,7 @@ const developers = [
         </Route>
 
         <Route path="/profile">
-        <Route index element={<Profile team={team} />} />
+        <Route index element={<Profile team={team} reviews = {companyReviews} />} />
         <Route
             path=":Profileid"
             element={<Dev team={team} />} 

@@ -206,6 +206,31 @@ export default function Product({ addToCart }) {
         );
     }
 
+    function renderManual(){
+        return(
+            <div className="product-manual-container">
+                {keyboard.manual.map((man) =>(
+                    <div className="product-manual-details">
+                        <h1>Troubleshoot</h1>
+                        <p>{man.troubleshoot}</p>
+                        <h1>Maintenance</h1>
+                        <p>{man.maintenance}</p>
+                        <h1>Setup</h1>
+                        <p>{man.setup}</p>
+                    </div>
+                ))}
+            </div>
+        )
+    }
+
+    function calculateAvg() {
+        if (reviews.length === 0) return 0; 
+        const totalRating = reviews.reduce((acc, review) => acc + review.rating, 0); // Start at 0
+        const avgRating = totalRating / reviews.length; 
+        return avgRating;
+    }
+    
+
     return (
         <>
             <div className="product-specifics">
@@ -216,7 +241,7 @@ export default function Product({ addToCart }) {
                 <div className="product-specifics-right">
                     <h2>{keyboard.name}</h2>
                     <h2>₱{keyboard.price}</h2>
-                    <p>Rating: {renderStars(keyboard.rating)} ({keyboard.rating})</p>
+                    <p>Rating: {renderStars(calculateAvg())} ({calculateAvg().toFixed(2)})</p>
                     {renderSwitches()}
                     <button onClick={handleAddToCart}>Add to Cart</button>
                 </div>
@@ -224,9 +249,12 @@ export default function Product({ addToCart }) {
             {renderSample()}
             {renderOverview()}
             <hr />
-            <div className="specs-included">
-                {renderspecs()}
-                {renderIncluded()}
+            <div className="specs-included-manual">
+                <div className="specs-included">
+                    {renderspecs()}
+                    {renderIncluded()}
+                </div>
+                {renderManual()}
             </div>
             {renderReviews()}
             <br />
